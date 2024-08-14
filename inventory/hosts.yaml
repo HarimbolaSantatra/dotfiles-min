@@ -1,0 +1,5 @@
+virtuals:
+  hosts:
+    192.168.56.3:
+  vars:
+    username: santatra
