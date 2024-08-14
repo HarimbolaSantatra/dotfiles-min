@@ -1,0 +1,19 @@
+- name: Setup configuration to remote server
+  remote_user: santatra
+  hosts: all
+  vars:
+    username: santatra
+  tasks:
+    - name: "Copy configuration"
+      tags: [ 'conf' ]
+      ansible.builtin.copy:
+        src: "{{ item }}"
+        dest: "/home/{{ username }}"
+        owner: "{{ username }}"
+        group: "{{ username }}"
+        mode: '664'
+      with_items:
+        - .bash_aliases
+        - .tmux.conf
+        - .vimrc
+        - .gitconfig

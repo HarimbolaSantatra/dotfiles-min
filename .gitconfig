@@ -1,0 +1,19 @@
+[alias]
+    a = add
+    br = branch
+    ca = commit -a
+    cu = commit --amend
+    cc = commit
+    co = checkout
+    d = diff
+    l = log --oneline -n10
+    pl = pull
+    ps = push
+    rb = rebase
+    s = status
+    sw = switch
+[user]
+	name = Santatra
+	email = santatra@example.com
+[core]
+	editor = vim --clean
