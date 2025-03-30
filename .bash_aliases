@@ -20,9 +20,6 @@ alias kubeget="kubectl get"
 alias lxc='sudo lxc'
 alias lxd='sudo lxd'
 
-# Wazuh
-alias rst_wazuh="sudo systemctl restart wazuh-manager"
-
 mvsan() {
    if [ ! $# -eq 1 ];then
        echo "Filename as argument is required!"
