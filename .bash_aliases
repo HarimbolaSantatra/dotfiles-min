@@ -1,3 +1,8 @@
+# more ls
+alias ll='ls -lh'
+
+alias ap='ansible-playbook'
+
 # pour ping
 alias ping8='ping 8.8.8.8'
 
@@ -19,6 +24,9 @@ alias kubeget="kubectl get"
 # lxc/lxd
 alias lxc='sudo lxc'
 alias lxd='sudo lxd'
+
+# ansible
+alias ap='ansible-playbook'
 
 mvsan() {
    if [ ! $# -eq 1 ];then
