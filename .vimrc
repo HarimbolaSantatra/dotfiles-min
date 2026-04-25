@@ -27,3 +27,7 @@ nnoremap <S-Tab> :bp<CR>
 set hidden                 " Switch between buffers without having to save first.
 set laststatus  =2         " Always show statusline.
 set display     =lastline  " Show as much as possible of the last line.
+
+" WINDOW
+set splitbelow
+set splitright
